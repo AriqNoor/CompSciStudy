@@ -5,13 +5,9 @@ using UnityEngine;
 public class Square1Move : MonoBehaviour
 {
     // Start is called before the first frame update
-    private Rigidbody2D rb ;
-    private void Awake() {
-        rb = GetComponent<Rigidbody2D>();
+    public float moveSpeed = 0f;
 
-
-    }
     private void FixedUpdate() {
-        rb.velocity = newVector2 (2f,of);
+        transform.Translate(new Vector2 (1f, of) * moveSpeed * Time.deltaTime);
     }
 }
