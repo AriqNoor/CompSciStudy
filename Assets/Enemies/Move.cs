@@ -5,8 +5,8 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
  
-    Vector3 pointA = new Vector3(0, 0, 0);
-    Vector3 pointB = new Vector3(1, 1, 1);
+    Vector3 pointA = new Vector3(-9, 4);
+    Vector3 pointB = new Vector3(9, 4);
  
     // Start is called before the first frame update
     void Start()
