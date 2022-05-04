@@ -5,22 +5,17 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
  
-    public float distance;
-    public float spinSpeed;
-    public float linearSpeed;
-    private Rigidbody2D rgb2d;
-    private float startPosition;
+    Vector3 pointA = new Vector3(0, 0, 0);
+    Vector3 pointB = new Vector3(1, 1, 1);
  
     // Start is called before the first frame update
     void Start()
     {
-        rgb2d = GetComponent<Rigidbody2D>();
-        startPosition = rgb2d.position.x;
+        
     }
  
-    private void FixedUpdate()
+    void Update()
     {
-        rgb2d.SetRotation(rgb2d.rotation + spinSpeed * Time.fixedDeltaTime);
-        rgb2d.MovePosition(new Vector2((Mathf.Sin((2 * Mathf.PI * (Time.time*linearSpeed/distance)) - (Mathf.PI / 2)) * (distance/2) + (distance/2))+startPosition,rgb2d.position.y));
+        transform.position = Vector3.Lerp(pointA, pointB, Mathf.PingPong(Time.time, 1));
     }
 }
