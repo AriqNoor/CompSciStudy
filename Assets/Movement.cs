@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour
         RG2D = GetComponent<Rigidbody>();
         MoveSpeed = 10f;
         JumpForce = 15f;
-        Jumping = true
+        Jumping = true;
     }
 
     // Update is called once per frame
