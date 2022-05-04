@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class controller : MonoBehaviour
+public class Movement : MonoBehaviour
 {
 
     public float MoveSpeed, JumpForce;
@@ -77,4 +77,5 @@ public class controller : MonoBehaviour
     {
         Jumping = false;
     }
+    
 }
