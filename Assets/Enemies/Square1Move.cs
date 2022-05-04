@@ -5,9 +5,7 @@ using UnityEngine;
 public class Square1 : MonoBehaviour
 {
     // Update is called once per frame
-    void Update() {
-        transform.Translate(
-            Input.GetAxis("Horizontal") * 5f * Time.deltaTime,
-            Input.GetAxis("Vertical") * 5f * Time.deltaTime, 0f);
+    private void FixedUpdate() {
+        transform.position = new Vector2 (8f,transform.position.y);
     }
 }
