@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class Square1 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    float phase = 0;
-    float speed = 1;
-    float phaseDirection = 1;
-
+    // Update is called once per frame
     void Update() {
-        transform.position = Vector3.Lerp(back, forth, phase);
-        phase += Time.deltaTime * speed * phaseDirection;
-        if(phase >=1 || phase <=0) phaseDirection *=-1;
+        transform.Translate(
+            Input.GetAxis("Horizontal") * 5f * Time.deltaTime,
+            Input.GetAxis("Vertical") * 5f * Time.deltaTime, 0f);
     }
 }
