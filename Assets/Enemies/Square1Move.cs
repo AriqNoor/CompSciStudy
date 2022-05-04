@@ -5,9 +5,13 @@ using UnityEngine;
 public class Square1Move : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float moveSpeed = 0f;
+    float phase = 0;
+    float speed = 1;
+    float phaseDirection = 1;
 
-    private void FixedUpdate() {
-        transform.Translate(new Vector2 (1f, 0f) * moveSpeed * Time.deltaTime);
+    void Update() {
+        transform.position = Vector3.Lerp(back, forth, phase);
+        phase += Time.deltaTime * speed * phaseDirection;
+        if(phase >=1 || phase <=0) phaseDirection *=-1;
     }
 }
