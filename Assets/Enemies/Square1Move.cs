@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Square1Move : MonoBehaviour
+public class Square1 : MonoBehaviour
 {
     // Start is called before the first frame update
     float phase = 0;
