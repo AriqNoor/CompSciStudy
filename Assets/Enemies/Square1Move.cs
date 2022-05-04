@@ -8,6 +8,6 @@ public class Square1Move : MonoBehaviour
     public float moveSpeed = 0f;
 
     private void FixedUpdate() {
-        transform.Translate(new Square1Move (1f, 0f) * moveSpeed * Time.deltaTime);
+        transform.Translate(new Square1 (1f, 0f) * moveSpeed * Time.deltaTime);
     }
 }
