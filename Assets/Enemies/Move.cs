@@ -21,6 +21,6 @@ public class Move : MonoBehaviour
     private void FixedUpdate()
     {
         rgb2d.SetRotation(rgb2d.rotation + spinSpeed * Time.fixedDeltaTime);
-        rgb2d.MovePosition(new Vector2((Mathf.Sin((2 * Mathf.PI * (Time.time*linearSpeed/distance)) - (Mathf.PI / 2)) * (distance/2) + (distance/2))+startPosition,rgb2d.position.y));
+        rgb2d.MovePosition(new Vector2((Mathf.Sin((2 * Mathf.PI * (Time.time*linearSpeed/distance)) - (Mathf.PI / 2)) * (distance/2) + (distance/2))+startPosition,rgb2d.position.x));
     }
 }
