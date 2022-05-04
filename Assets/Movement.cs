@@ -29,7 +29,7 @@ public class Movement : MonoBehaviour
         }
 
         if(MovY == 1 && !Jumping) {
-            RG2D.velocity = new Vector2(RG2D.velocity.x, JumpForce)
+            RG2D.velocity = new Vector2(RG2D.velocity.x, JumpForce);
         }
 
         if(MovY == -1) {
