@@ -5,8 +5,8 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
  
-    Vector3 pointA = new Vector3(-9, 4);
-    Vector3 pointB = new Vector3(9, 4);
+    Vector2 pointA = new Vector3(-9, 4);
+    Vector2 pointB = new Vector3(9, 4);
  
     // Start is called before the first frame update
     void Start()
@@ -16,6 +16,6 @@ public class Move : MonoBehaviour
  
     void Update()
     {
-        transform.position = Vector3.Lerp(pointA, pointB, Mathf.PingPong(Time.time, 1));
+        transform.position = Vector2.Lerp(pointA, pointB, Mathf.PingPong(Time.time, 1));
     }
 }
