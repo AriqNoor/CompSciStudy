@@ -6,13 +6,13 @@ public class Player : MonoBehaviour
 {
     public float speed;
 
-    private Rigidbody2D rb;
-    private Vector2 moveVelocity;
+    public Rigidbody2D RigidBody2D;
+    public Vector2 moveVelocity;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        RigidBody2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -23,6 +23,6 @@ public class Player : MonoBehaviour
     }
 
     void FixedUpdate() {
-        rb.MovePosition(rb.position+moveVelocity*Time.fixedDeltaTime);
+        RigidBody2D.MovePosition(RigidBody2D.position+moveVelocity*Time.fixedDeltaTime);
     }
 }
