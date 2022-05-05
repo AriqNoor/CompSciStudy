@@ -12,6 +12,7 @@ public class Move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Renders Sprite
         spriteRenderer = GetComponent<spriteRenderer>();
     }
 
@@ -25,10 +26,12 @@ public class Move : MonoBehaviour
             movesquareleft();
         }
         if(transform.position.x >= 9f) {
+            //Change direction left
             change = false;
             spriteRenderer.flipX = true;
         }
         if(transform.position.c <= -9f) {
+            //Change direction right
             change = true;
             spriteRenderer.flipX = false;
         }
