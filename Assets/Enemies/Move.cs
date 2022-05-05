@@ -12,7 +12,7 @@ public class Move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<spriteRenderer>();
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class Move : MonoBehaviour
         }
         if(transform.position.x >= 9f) {
             change = false;
-            spriteRenderer.flipC = true;
+            spriteRenderer.flipX = true;
         }
         if(transform.position.c <= -9f) {
             change = true;
