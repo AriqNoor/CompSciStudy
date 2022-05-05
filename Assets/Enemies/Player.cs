@@ -6,8 +6,8 @@ public class Player : MonoBehaviour
 {
     public float speed;
 
-    public Rigidbody2D RigidBody2D;
-    public Vector2 moveVelocity;
+    private Rigidbody2D RigidBody2D;
+    private Vector2 moveVelocity;
 
     // Start is called before the first frame update
     void Start()
