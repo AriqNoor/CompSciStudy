@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SpriteRenderer.Sprite
+using UnityEngine.SpriteRenderer.Sprite;
  
 public class Move : MonoBehaviour
 {
