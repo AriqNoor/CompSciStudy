@@ -5,7 +5,7 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
     // I plan to gradually change speed
-    public float speed = 5f;
+    public float speed = 10f;
 
     bool change = true;
 
