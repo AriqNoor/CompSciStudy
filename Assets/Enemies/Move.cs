@@ -8,12 +8,13 @@ public class Move : MonoBehaviour
     public float speed = 5f;
 
     bool change = true;
+
     public SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer = GetComponent<spriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
