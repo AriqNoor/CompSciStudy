@@ -9,7 +9,7 @@ public class DeadPlayer : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        ProcessCOllision(collision.gameObject)
+        ProcessCOllision(collision.gameObject);
     }
 
     void ProcessCollision(GameObject collider) {
@@ -19,6 +19,6 @@ public class DeadPlayer : MonoBehaviour
     }
 
     void HitPlayer() {
-        Debug.Log("GAME OVER YOU BUM!")
+        Debug.Log("GAME OVER YOU BUM!");
     }
 }
