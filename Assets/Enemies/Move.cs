@@ -7,7 +7,7 @@ public class Move : MonoBehaviour
     public float speed = 5f;
 
     bool change = true;
-    private SpriteRenderer SpriteRenderer;
+    private SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
