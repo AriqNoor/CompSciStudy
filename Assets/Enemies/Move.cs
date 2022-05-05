@@ -4,15 +4,40 @@ using UnityEngine;
  
 public class Move : MonoBehaviour
 {
-    Vector3 pointA = new Vector3(0, 0, 0);
-    Vector3 pointB = new Vector3(1, 1, 1);
-
-    void Start() {
-
-    }
+    public float speed = 5f;
     
-    void Update()
+    bool switch = true;
+
+    private SpriteRenderer SpriteRenderer;
+
+    void Start()
     {
-        transform.position = Vector3.Lerp(pointA, pointB, Mathf.PingPong(Time.time, 1));
+        spriteRenderer = GetComponent<spriteRenderer>();
+    }
+
+    void Update() 
+    {
+        if(switch) {
+            movesquareright();
+        }
+        if(!switch) {
+            movesquareleft()
+        }
+        if(transform.position.x >= 9f){
+            switch = false;
+            spriteRenderer.flipX = true;
+        }
+        if transform.position.x <= -9f {
+            switch = false;
+            spriteRenderer.flipX = true;
+        }
+    }
+
+    void movesquareright() {
+        transform.Translate(speed*Time.deltaTime,0,0);
+    }
+
+    void movesquareleft() {
+        transform.Translate(-speed*Time.deltaTime,0,0);
     }
 }
