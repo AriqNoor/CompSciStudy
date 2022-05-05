@@ -31,7 +31,7 @@ public class Move : MonoBehaviour
             change = false;
             spriteRenderer.flipX = true;
         }
-        if(transform.position.c <= -9f) {
+        if(transform.position.x <= -9f) {
             //Change direction right
             change = true;
             spriteRenderer.flipX = false;
