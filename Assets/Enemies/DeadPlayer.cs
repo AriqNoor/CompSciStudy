@@ -9,7 +9,7 @@ public class DeadPlayer : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        ProcessCOllision(collision.gameObject);
+        ProcessCollision(collision.gameObject);
     }
 
     void ProcessCollision(GameObject collider) {
