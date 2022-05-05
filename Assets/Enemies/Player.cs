@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     public float speed;
 
-    private RigidBody2D rb;
+    private Rigidbody2D rb;
     private Vector2 moveVelocity;
 
     // Start is called before the first frame update
