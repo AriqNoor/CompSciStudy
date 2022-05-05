@@ -13,7 +13,6 @@ public class Move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Renders Sprite
         spriteRenderer = GetComponent<spriteRenderer>();
     }
 
