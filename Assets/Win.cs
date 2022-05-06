@@ -13,7 +13,7 @@ public class Win : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(position.y >= 5f) {
+        if(transform.position.y >= 5f) {
             Debug.Log("CONGRATULATIONS! YOU WIN!");
             Destroy(GameObject.Find("Circle"));
         }
