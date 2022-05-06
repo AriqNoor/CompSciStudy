@@ -14,7 +14,7 @@ public class Win : MonoBehaviour
     void Update()
     {
         if(position.y >= 5f) {
-            Debug.Log("CONGRATULATIONS! YOU WIN!")
+            Debug.Log("CONGRATULATIONS! YOU WIN!");
             Destroy(GameObject.Find("Circle"));
         }
     }
