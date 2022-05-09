@@ -16,7 +16,7 @@ public class Move : MonoBehaviour
     void Start()
     {
         // Set spriteRenderer variable = SpriteRenderer that's attached to the square GameObject
-        spriteRenderer = GetComponent<spriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
