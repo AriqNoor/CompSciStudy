@@ -9,13 +9,13 @@ public class Move : MonoBehaviour
     // Set bool to allow square to change direction
     bool change = true;
 
-    // Calls the square sprite from unity
+    // Creates SpriteRenderer variable called spriteRenderer
     public SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
-        // Fetch SpriteRenderer from GameObject (the square)
+        // Set spriteRenderer variable = SpriteRenderer that's attached to the square GameObject
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
