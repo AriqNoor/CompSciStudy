@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
  
+
+//create a program that moves the square side-to-side by itself.
+
 public class Move : MonoBehaviour
 {
     public float speed = 10f;
