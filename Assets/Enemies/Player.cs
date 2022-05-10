@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+//create a program that moves the circle based on user input
+//use "void FixedUpdate" because it’s related to adjusting the physics of the circle. 
 public class Player : MonoBehaviour
 {
     public float speed;
